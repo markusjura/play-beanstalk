@@ -1,2 +1,10 @@
+branch-defaults:
+  master:
+    environment: prod
 global:
+  application_name: play-docker-beanstalk
+  default_ec2_keyname: typesafe-training
+  default_platform: Docker 1.3.3
+  default_region: us-east-1
   profile: eb-cli
+  sc: git
