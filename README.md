@@ -1,4 +1,4 @@
-# Play + Docker + Jenkins + AWS Beanstalk
+# Deploy Play app on AWS Beanstalk with Docker and Jenkins
 
 It's possible to deploy [Play](https://playframework.com/) applications on [AWS Beanstalk](http://aws.amazon.com/elasticbeanstalk/).
 This project shows how to automatically deploy the latest Play version on AWS Beanstalk as an docker image via Jenkins.
@@ -202,6 +202,7 @@ Now add the `Dockerrun.aws.json` file which have created on our development envi
 
 ### Add Jenkins service to Github
 Finally Jenkins should deploy the Play application whenever we push something to origin master. Therefor we need to add the Jenkins server as a service to our github project:
+
 1. Go to your Github project, e.g. `https://github.com/markusjura/play-beanstalk`
 2. Navigate to `Settings` > `Webhooks & Services`
 3. Add a new `Jenkins (Git plugin)` service
